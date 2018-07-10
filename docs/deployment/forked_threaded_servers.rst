@@ -9,7 +9,8 @@ to optimize how they work and share memory. This can create problems when
 certain actions happen before the fork or thread dispatch, such as when files or
 file-descriptors are opened or random number generators are initialized.
 
-Many servers have
+Many servers have built-in hooks or events which allow you to easily handle these
+situations.
 
 
 Servers
@@ -44,7 +45,7 @@ your application would include code like
     from uwsgidecorators import postfork
     
     @postfork
-    def my_setuo():
+    def my_setup():
 		log.debug("uwsgi - postfork")
 
 documentation for the `postfork` decorator appears on https://uwsgi-docs.readthedocs.io/en/latest/PythonDecorators.html#uwsgidecorators.postfork
@@ -84,4 +85,10 @@ Additional documentation on this topic is available from SqlAlchemy's docs:
 * http://docs.sqlalchemy.org/en/latest/core/pooling.html#using-connection-pools-with-multiprocessing
 * http://docs.sqlalchemy.org/en/latest/core/connections.html#engine-disposal
 
+
+PyCrypto
+============
+
+The pycrypto library provides for a `Crypto.Random.atfork` function to reseed the
+pseudo-random number generator when a process forks.
 
