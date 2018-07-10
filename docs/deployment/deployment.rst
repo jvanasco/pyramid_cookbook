@@ -52,3 +52,15 @@ A short list includes:
 + ``mod_wsgi``
 
 For more information on WSGI, see the `WSGI home <http://wsgi.readthedocs.io/en/latest/>`_
+
+
+Special Considerations
+++++++++++++++++++++++
+
+Certain environments and webservers require special considerations when
+deploying your pyramid application due to implementation details of Python, the
+webserver, and/or popular packages.
+
+Forked and Threaded servers share some common gotchas and solutions.
+
++ ``forked_threaded_servers``
