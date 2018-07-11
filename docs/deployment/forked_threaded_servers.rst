@@ -50,7 +50,7 @@ uWSGI
 
 uWSGI offers a decorator to handle forking.
 
-Your application should include code like the following:
+Your application should include code like the following.
 
 .. code_block:: python
 
