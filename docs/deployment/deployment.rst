@@ -57,10 +57,10 @@ For more information on WSGI, see the `WSGI home <http://wsgi.readthedocs.io/en/
 Special Considerations
 ++++++++++++++++++++++
 
-Certain environments and webservers require special considerations when
-deploying your pyramid application due to implementation details of Python, the
-webserver, and/or popular packages.
+Certain environments and web servers require special considerations when
+deploying your Pyramid application due to implementation details of Python, the
+web server, or popular packages.
 
 Forked and Threaded servers share some common gotchas and solutions.
 
-+ ``forked_threaded_servers``
+:doc:`forked_threaded_servers`
