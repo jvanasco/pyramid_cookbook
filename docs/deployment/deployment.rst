@@ -61,6 +61,6 @@ Certain environments and web servers require special considerations when
 deploying your Pyramid application due to implementation details of Python, the
 web server, or popular packages.
 
-Forked and Threaded servers share some common gotchas and solutions.
+Forked and threaded servers share some common gotchas and solutions.
 
 :doc:`forked_threaded_servers`
